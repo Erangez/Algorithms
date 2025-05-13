@@ -129,7 +129,7 @@ int main() {
 		}
 		case MENU_5: {
 			system("cls");
-			for (int brand_id = 0, res = 0; brand_id < size(brands); brand_id++) {
+			for (int brand_id = 0, res = 0; brand_id < sizeof(brands) / sizeof(brands[0]); brand_id++) {
 				for (int car_id = 0; car_id < car_amount; car_id++) {
 					cars[car_id].brand == brands[brand_id] ? res++ : res;
 				}
